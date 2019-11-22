@@ -1,0 +1,6 @@
+Input To Reducer <zipcodetype,city, state>
+Output of Reducer <zipcodetype,city, count>
+Output mapper  <zipcodetype city , state>
+In Mapper phase : input will be read from the tables and key will be the group by columns and value will be the value of column on which aggregation is to be applied
+Mapper phase output <value of groupby columns, column value on which aggregation is to be applied>
+In Reducer phase :  input <value of groupby columns, column value on which aggregation is to be applied> and output <groupby columns values,aggregate function value>    

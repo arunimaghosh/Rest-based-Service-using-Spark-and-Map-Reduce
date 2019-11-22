@@ -1,0 +1,4 @@
+
+linesRDD (Dataset read in form of text - 'sc.textFile') -->datasetRDD (mapToPair operation - selecting only those tuples that satify the condition) -->
+joinedRDD - joining the tables(join operation)-->
+collect operation

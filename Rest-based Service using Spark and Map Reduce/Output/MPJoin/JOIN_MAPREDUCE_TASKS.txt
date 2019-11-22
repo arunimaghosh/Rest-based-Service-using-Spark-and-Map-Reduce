@@ -1,0 +1,6 @@
+For Mapper phase: read the input from ZIP table taking one tuple at a time. Then tokenize the input and use zipcode as the key and pass the value of entire tuple along with 'b' as a tag to identify that it comes from zip table
+KEY:zipcode VALUE:b+entire tuple    <zipcode,b+entire tuple>
+For Mapper phase: read the input from USER table taking one tuple at a time. Then tokenize the input and use zipcode as the key and pass the value of entire tuple along with 'a' as a tag to identify that it comes from user table.
+KEY:zipcode  VALUE:a+entire tuple    <zipcode,a+entire tuple>
+In Reducer phase :  input <key,[a..][a..][b..]... > 
+Take two lists A and B, put every value which begins with a in A and put values which begin with b in B. If both the lists are non empty then write the output in the form of <A,B>

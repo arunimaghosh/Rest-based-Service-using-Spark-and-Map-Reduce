@@ -1,0 +1,4 @@
+
+linesRDD (Dataset read in form of text - 'sc.textFile') -->datasetRDD (mapToPair operation) -->
+groupedRDD - grouping the same keys(groupByKey operation)-->resultRDD - performing the input function(map operation)-->
+collect operation
